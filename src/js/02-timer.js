@@ -39,10 +39,6 @@ flatpickr(dateInputEl, {
   onClose(selectedDates) {
     if (Number(now) > Number(selectedDates[0])) {
       clearInterval(intervalId);
-      document.querySelector('span[data-days]').textContent = addLeadingZero('0');
-      document.querySelector('span[data-hours]').textContent = addLeadingZero('0');
-      document.querySelector('span[data-minutes]').textContent = addLeadingZero('0');
-      document.querySelector('span[data-seconds]').textContent = addLeadingZero('0');
       startButtonEl.setAttribute('disabled', 'disabled');
       Notify.failure('Please choose a date in the future');
     } else {

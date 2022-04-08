@@ -3,7 +3,9 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import 'notiflix/dist/notiflix-3.2.5.min.css';
 
-const promisesFormEl = document.querySelector('.form');
+const formEl = document.querySelector('.form');
+
+console.dir(formEl);
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
@@ -42,4 +44,4 @@ const onPromisesFormSubmit = event => {
   }
 };
 
-promisesFormEl.addEventListener('submit', onPromisesFormSubmit);
+formEl.addEventListener('submit', onPromisesFormSubmit);

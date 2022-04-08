@@ -25,6 +25,14 @@ img {
 
 #datetime-picker{
   margin-left: 10px;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+
+button[type="button"] {
+padding: 5px 5px;
+border-radius: 4px;
+
 }
 
 .timer{
