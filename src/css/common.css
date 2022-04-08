@@ -16,3 +16,33 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.color-switcher-btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+#datetime-picker{
+  margin-left: 10px;
+}
+
+.timer{
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+}
+.field {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.field:not(:last-child){
+  margin-right: 15px;
+}
+.value {
+  font-size: 34px;
+}
+.label {
+  font-size: 14px;
+}
